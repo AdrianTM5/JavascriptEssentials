@@ -24,6 +24,19 @@ function show(){
     const functionConst = "I'm a block-scoped const";
     }
     show();
-    console.log(functionVar);
-    console.log(functionLet);
-    console.log(functionConst);
+    //console.log(functionVar);
+    //console.log(functionLet);
+   // console.log(functionConst);
+
+    function papu(){
+        const name = "Papu";
+        var age = 22;
+        age = 2222;
+        
+    }
+    papu();
+
+   let age = 22;
+   let canVote = age >= 18 ? "Yes" : "No";
+   console.log(canVote);
+   console.log(typeof(canVote));
