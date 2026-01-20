@@ -25,5 +25,12 @@ function decreaseCount() {
         alert("You cannot unfollow")
     }
     displayCount();
+}
 
+function reset() {
+    if(count != 0){
+        count = 0;
+     displayCount();
+    alert("The followers count has been reset")
+    }
 }
