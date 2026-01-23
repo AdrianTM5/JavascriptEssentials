@@ -34,15 +34,13 @@ function showbooks() {
     }
 
 function editbook(index) {
-    console.log('1');
-    const book = book[index];
+    const book = books[index];
     document.getElementById('bookName').value = book.name;
     document.getElementById('authorName').value = book.authorName;
     document.getElementById('bookDescription').value = book.bookDescription;
     document.getElementById('pagesNumber').value = book.pagesNumber;
     books.splice(index, 1);
     showbooks();
-    console.log('2'); //ver  pedo, no llega al final
 }
 
 function clearInputs() {
@@ -53,9 +51,7 @@ function clearInputs() {
 }
 
 function deletebook(index) {
-    console.log('3');
-    const book = book[index];
-    book.pop;
+    const book = books[index];
+    books.splice(index, 1);
     showbooks();
-    console.log('4'); //ver q pedo, no llega al final
 }
